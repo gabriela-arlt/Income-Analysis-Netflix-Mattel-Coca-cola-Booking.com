@@ -1,0 +1,2111 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0308.0326                               -->
+<workbook original-version='18.1' source-build='2024.1.1 (20241.24.0308.0326)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='booking+ (all_incomes)' inline='true' name='federated.1vub51e0te6viq0zkvw4w0ry8n6h' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='all_incomes' name='excel-direct.1lbafvl0ipba5x1gyas6f08ffv1f'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/gabb_/Gabriela Arlt CAB Projects/Barbie, Netflix, api/all_incomes.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1lbafvl0ipba5x1gyas6f08ffv1f' name='booking' table='[booking$]' type='table'>
+          <columns gridOrigin='A1:AA15:no:A1:AA15:0' header='yes' outcome='2'>
+            <column datatype='string' name='Year' ordinal='0' />
+            <column datatype='date' name='Fiscal Date Ending' ordinal='1' />
+            <column datatype='string' name='Reported Currency' ordinal='2' />
+            <column datatype='integer' name='Gross Profit' ordinal='3' />
+            <column datatype='integer' name='Total Revenue' ordinal='4' />
+            <column datatype='integer' name='Cost of Revenue' ordinal='5' />
+            <column datatype='integer' name='Cost of Goods and Services Sold' ordinal='6' />
+            <column datatype='integer' name='Operating Income' ordinal='7' />
+            <column datatype='integer' name='Selling, General and Administrative' ordinal='8' />
+            <column datatype='integer' name='Research and Development' ordinal='9' />
+            <column datatype='integer' name='Operating Expenses' ordinal='10' />
+            <column datatype='integer' name='Investment Income Net' ordinal='11' />
+            <column datatype='integer' name='Net Interest Income' ordinal='12' />
+            <column datatype='integer' name='Interest Income' ordinal='13' />
+            <column datatype='integer' name='Interest Expense' ordinal='14' />
+            <column datatype='integer' name='Non-Interest Income' ordinal='15' />
+            <column datatype='integer' name='Other Non-Operating Income' ordinal='16' />
+            <column datatype='integer' name='Depreciation' ordinal='17' />
+            <column datatype='integer' name='Depreciation and Amortization' ordinal='18' />
+            <column datatype='integer' name='Income Before Tax' ordinal='19' />
+            <column datatype='integer' name='Income Tax Expense' ordinal='20' />
+            <column datatype='integer' name='Interest and Debt Expense' ordinal='21' />
+            <column datatype='integer' name='Net Income from Continuing Operations' ordinal='22' />
+            <column datatype='integer' name='Comprehensive Income Net of Tax' ordinal='23' />
+            <column datatype='integer' name='EBIT' ordinal='24' />
+            <column datatype='integer' name='EBITDA' ordinal='25' />
+            <column datatype='integer' name='Net Income' ordinal='26' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='excel-direct.1lbafvl0ipba5x1gyas6f08ffv1f' name='booking' table='[booking$]' type='table'>
+            <columns gridOrigin='A1:AA15:no:A1:AA15:0' header='yes' outcome='2'>
+              <column datatype='string' name='Year' ordinal='0' />
+              <column datatype='date' name='Fiscal Date Ending' ordinal='1' />
+              <column datatype='string' name='Reported Currency' ordinal='2' />
+              <column datatype='integer' name='Gross Profit' ordinal='3' />
+              <column datatype='integer' name='Total Revenue' ordinal='4' />
+              <column datatype='integer' name='Cost of Revenue' ordinal='5' />
+              <column datatype='integer' name='Cost of Goods and Services Sold' ordinal='6' />
+              <column datatype='integer' name='Operating Income' ordinal='7' />
+              <column datatype='integer' name='Selling, General and Administrative' ordinal='8' />
+              <column datatype='integer' name='Research and Development' ordinal='9' />
+              <column datatype='integer' name='Operating Expenses' ordinal='10' />
+              <column datatype='integer' name='Investment Income Net' ordinal='11' />
+              <column datatype='integer' name='Net Interest Income' ordinal='12' />
+              <column datatype='integer' name='Interest Income' ordinal='13' />
+              <column datatype='integer' name='Interest Expense' ordinal='14' />
+              <column datatype='integer' name='Non-Interest Income' ordinal='15' />
+              <column datatype='integer' name='Other Non-Operating Income' ordinal='16' />
+              <column datatype='integer' name='Depreciation' ordinal='17' />
+              <column datatype='integer' name='Depreciation and Amortization' ordinal='18' />
+              <column datatype='integer' name='Income Before Tax' ordinal='19' />
+              <column datatype='integer' name='Income Tax Expense' ordinal='20' />
+              <column datatype='integer' name='Interest and Debt Expense' ordinal='21' />
+              <column datatype='integer' name='Net Income from Continuing Operations' ordinal='22' />
+              <column datatype='integer' name='Comprehensive Income Net of Tax' ordinal='23' />
+              <column datatype='integer' name='EBIT' ordinal='24' />
+              <column datatype='integer' name='EBITDA' ordinal='25' />
+              <column datatype='integer' name='Net Income' ordinal='26' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1lbafvl0ipba5x1gyas6f08ffv1f' name='netflix' table='[netflix$]' type='table'>
+            <columns gridOrigin='A1:AA16:no:A1:AA16:0' header='yes' outcome='2'>
+              <column datatype='string' name='Year' ordinal='0' />
+              <column datatype='date' name='Fiscal Date Ending' ordinal='1' />
+              <column datatype='string' name='Reported Currency' ordinal='2' />
+              <column datatype='integer' name='Gross Profit' ordinal='3' />
+              <column datatype='integer' name='Total Revenue' ordinal='4' />
+              <column datatype='integer' name='Cost of Revenue' ordinal='5' />
+              <column datatype='integer' name='Cost of Goods and Services Sold' ordinal='6' />
+              <column datatype='integer' name='Operating Income' ordinal='7' />
+              <column datatype='integer' name='Selling, General and Administrative' ordinal='8' />
+              <column datatype='integer' name='Research and Development' ordinal='9' />
+              <column datatype='integer' name='Operating Expenses' ordinal='10' />
+              <column datatype='string' name='Investment Income Net' ordinal='11' />
+              <column datatype='integer' name='Net Interest Income' ordinal='12' />
+              <column datatype='integer' name='Interest Income' ordinal='13' />
+              <column datatype='integer' name='Interest Expense' ordinal='14' />
+              <column datatype='integer' name='Non-Interest Income' ordinal='15' />
+              <column datatype='integer' name='Other Non-Operating Income' ordinal='16' />
+              <column datatype='string' name='Depreciation' ordinal='17' />
+              <column datatype='integer' name='Depreciation and Amortization' ordinal='18' />
+              <column datatype='integer' name='Income Before Tax' ordinal='19' />
+              <column datatype='integer' name='Income Tax Expense' ordinal='20' />
+              <column datatype='integer' name='Interest and Debt Expense' ordinal='21' />
+              <column datatype='integer' name='Net Income from Continuing Operations' ordinal='22' />
+              <column datatype='integer' name='Comprehensive Income Net of Tax' ordinal='23' />
+              <column datatype='integer' name='EBIT' ordinal='24' />
+              <column datatype='integer' name='EBITDA' ordinal='25' />
+              <column datatype='integer' name='Net Income' ordinal='26' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1lbafvl0ipba5x1gyas6f08ffv1f' name='mattel' table='[mattel$]' type='table'>
+            <columns gridOrigin='A1:AA16:no:A1:AA16:0' header='yes' outcome='2'>
+              <column datatype='string' name='Year' ordinal='0' />
+              <column datatype='date' name='Fiscal Date Ending' ordinal='1' />
+              <column datatype='string' name='Reported Currency' ordinal='2' />
+              <column datatype='integer' name='Gross Profit' ordinal='3' />
+              <column datatype='integer' name='Total Revenue' ordinal='4' />
+              <column datatype='integer' name='Cost of Revenue' ordinal='5' />
+              <column datatype='integer' name='Cost of Goods and Services Sold' ordinal='6' />
+              <column datatype='integer' name='Operating Income' ordinal='7' />
+              <column datatype='integer' name='Selling, General and Administrative' ordinal='8' />
+              <column datatype='integer' name='Research and Development' ordinal='9' />
+              <column datatype='integer' name='Operating Expenses' ordinal='10' />
+              <column datatype='integer' name='Investment Income Net' ordinal='11' />
+              <column datatype='integer' name='Net Interest Income' ordinal='12' />
+              <column datatype='integer' name='Interest Income' ordinal='13' />
+              <column datatype='integer' name='Interest Expense' ordinal='14' />
+              <column datatype='integer' name='Non-Interest Income' ordinal='15' />
+              <column datatype='integer' name='Other Non-Operating Income' ordinal='16' />
+              <column datatype='integer' name='Depreciation' ordinal='17' />
+              <column datatype='integer' name='Depreciation and Amortization' ordinal='18' />
+              <column datatype='integer' name='Income Before Tax' ordinal='19' />
+              <column datatype='integer' name='Income Tax Expense' ordinal='20' />
+              <column datatype='integer' name='Interest and Debt Expense' ordinal='21' />
+              <column datatype='integer' name='Net Income from Continuing Operations' ordinal='22' />
+              <column datatype='integer' name='Comprehensive Income Net of Tax' ordinal='23' />
+              <column datatype='integer' name='EBIT' ordinal='24' />
+              <column datatype='integer' name='EBITDA' ordinal='25' />
+              <column datatype='integer' name='Net Income' ordinal='26' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Comprehensive Income Net of Tax (mattel)]' value='[mattel].[Comprehensive Income Net of Tax]' />
+          <map key='[Comprehensive Income Net of Tax (netflix)]' value='[netflix].[Comprehensive Income Net of Tax]' />
+          <map key='[Comprehensive Income Net of Tax]' value='[booking].[Comprehensive Income Net of Tax]' />
+          <map key='[Cost of Goods and Services Sold (mattel)]' value='[mattel].[Cost of Goods and Services Sold]' />
+          <map key='[Cost of Goods and Services Sold (netflix)]' value='[netflix].[Cost of Goods and Services Sold]' />
+          <map key='[Cost of Goods and Services Sold]' value='[booking].[Cost of Goods and Services Sold]' />
+          <map key='[Cost of Revenue (mattel)]' value='[mattel].[Cost of Revenue]' />
+          <map key='[Cost of Revenue (netflix)]' value='[netflix].[Cost of Revenue]' />
+          <map key='[Cost of Revenue]' value='[booking].[Cost of Revenue]' />
+          <map key='[Depreciation (mattel)]' value='[mattel].[Depreciation]' />
+          <map key='[Depreciation (netflix)]' value='[netflix].[Depreciation]' />
+          <map key='[Depreciation and Amortization (mattel)]' value='[mattel].[Depreciation and Amortization]' />
+          <map key='[Depreciation and Amortization (netflix)]' value='[netflix].[Depreciation and Amortization]' />
+          <map key='[Depreciation and Amortization]' value='[booking].[Depreciation and Amortization]' />
+          <map key='[Depreciation]' value='[booking].[Depreciation]' />
+          <map key='[EBIT (mattel)]' value='[mattel].[EBIT]' />
+          <map key='[EBIT (netflix)]' value='[netflix].[EBIT]' />
+          <map key='[EBITDA (mattel)]' value='[mattel].[EBITDA]' />
+          <map key='[EBITDA (netflix)]' value='[netflix].[EBITDA]' />
+          <map key='[EBITDA]' value='[booking].[EBITDA]' />
+          <map key='[EBIT]' value='[booking].[EBIT]' />
+          <map key='[Fiscal Date Ending (mattel)]' value='[mattel].[Fiscal Date Ending]' />
+          <map key='[Fiscal Date Ending (netflix)]' value='[netflix].[Fiscal Date Ending]' />
+          <map key='[Fiscal Date Ending]' value='[booking].[Fiscal Date Ending]' />
+          <map key='[Gross Profit (mattel)]' value='[mattel].[Gross Profit]' />
+          <map key='[Gross Profit (netflix)]' value='[netflix].[Gross Profit]' />
+          <map key='[Gross Profit]' value='[booking].[Gross Profit]' />
+          <map key='[Income Before Tax (mattel)]' value='[mattel].[Income Before Tax]' />
+          <map key='[Income Before Tax (netflix)]' value='[netflix].[Income Before Tax]' />
+          <map key='[Income Before Tax]' value='[booking].[Income Before Tax]' />
+          <map key='[Income Tax Expense (mattel)]' value='[mattel].[Income Tax Expense]' />
+          <map key='[Income Tax Expense (netflix)]' value='[netflix].[Income Tax Expense]' />
+          <map key='[Income Tax Expense]' value='[booking].[Income Tax Expense]' />
+          <map key='[Interest Expense (mattel)]' value='[mattel].[Interest Expense]' />
+          <map key='[Interest Expense (netflix)]' value='[netflix].[Interest Expense]' />
+          <map key='[Interest Expense]' value='[booking].[Interest Expense]' />
+          <map key='[Interest Income (mattel)]' value='[mattel].[Interest Income]' />
+          <map key='[Interest Income (netflix)]' value='[netflix].[Interest Income]' />
+          <map key='[Interest Income]' value='[booking].[Interest Income]' />
+          <map key='[Interest and Debt Expense (mattel)]' value='[mattel].[Interest and Debt Expense]' />
+          <map key='[Interest and Debt Expense (netflix)]' value='[netflix].[Interest and Debt Expense]' />
+          <map key='[Interest and Debt Expense]' value='[booking].[Interest and Debt Expense]' />
+          <map key='[Investment Income Net (mattel)]' value='[mattel].[Investment Income Net]' />
+          <map key='[Investment Income Net (netflix)]' value='[netflix].[Investment Income Net]' />
+          <map key='[Investment Income Net]' value='[booking].[Investment Income Net]' />
+          <map key='[Net Income (mattel)]' value='[mattel].[Net Income]' />
+          <map key='[Net Income (netflix)]' value='[netflix].[Net Income]' />
+          <map key='[Net Income from Continuing Operations (mattel)]' value='[mattel].[Net Income from Continuing Operations]' />
+          <map key='[Net Income from Continuing Operations (netflix)]' value='[netflix].[Net Income from Continuing Operations]' />
+          <map key='[Net Income from Continuing Operations]' value='[booking].[Net Income from Continuing Operations]' />
+          <map key='[Net Income]' value='[booking].[Net Income]' />
+          <map key='[Net Interest Income (mattel)]' value='[mattel].[Net Interest Income]' />
+          <map key='[Net Interest Income (netflix)]' value='[netflix].[Net Interest Income]' />
+          <map key='[Net Interest Income]' value='[booking].[Net Interest Income]' />
+          <map key='[Non-Interest Income (mattel)]' value='[mattel].[Non-Interest Income]' />
+          <map key='[Non-Interest Income (netflix)]' value='[netflix].[Non-Interest Income]' />
+          <map key='[Non-Interest Income]' value='[booking].[Non-Interest Income]' />
+          <map key='[Operating Expenses (mattel)]' value='[mattel].[Operating Expenses]' />
+          <map key='[Operating Expenses (netflix)]' value='[netflix].[Operating Expenses]' />
+          <map key='[Operating Expenses]' value='[booking].[Operating Expenses]' />
+          <map key='[Operating Income (mattel)]' value='[mattel].[Operating Income]' />
+          <map key='[Operating Income (netflix)]' value='[netflix].[Operating Income]' />
+          <map key='[Operating Income]' value='[booking].[Operating Income]' />
+          <map key='[Other Non-Operating Income (mattel)]' value='[mattel].[Other Non-Operating Income]' />
+          <map key='[Other Non-Operating Income (netflix)]' value='[netflix].[Other Non-Operating Income]' />
+          <map key='[Other Non-Operating Income]' value='[booking].[Other Non-Operating Income]' />
+          <map key='[Reported Currency (mattel)]' value='[mattel].[Reported Currency]' />
+          <map key='[Reported Currency (netflix)]' value='[netflix].[Reported Currency]' />
+          <map key='[Reported Currency]' value='[booking].[Reported Currency]' />
+          <map key='[Research and Development (mattel)]' value='[mattel].[Research and Development]' />
+          <map key='[Research and Development (netflix)]' value='[netflix].[Research and Development]' />
+          <map key='[Research and Development]' value='[booking].[Research and Development]' />
+          <map key='[Selling, General and Administrative (mattel)]' value='[mattel].[Selling, General and Administrative]' />
+          <map key='[Selling, General and Administrative (netflix)]' value='[netflix].[Selling, General and Administrative]' />
+          <map key='[Selling, General and Administrative]' value='[booking].[Selling, General and Administrative]' />
+          <map key='[Total Revenue (mattel)]' value='[mattel].[Total Revenue]' />
+          <map key='[Total Revenue (netflix)]' value='[netflix].[Total Revenue]' />
+          <map key='[Total Revenue]' value='[booking].[Total Revenue]' />
+          <map key='[Year (mattel)]' value='[mattel].[Year]' />
+          <map key='[Year (netflix)]' value='[netflix].[Year]' />
+          <map key='[Year]' value='[booking].[Year]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[booking]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:AA15:no:A1:AA15:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[netflix]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:AA16:no:A1:AA16:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[mattel]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:AA16:no:A1:AA16:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[booking]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[booking_8F818CBD894049968ADF3466B5AE1EC9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fiscal Date Ending</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Fiscal Date Ending]</local-name>
+            <parent-name>[booking]</parent-name>
+            <remote-alias>Fiscal Date Ending</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[booking_8F818CBD894049968ADF3466B5AE1EC9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Reported Currency</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Reported Currency]</local-name>
+            <parent-name>[booking]</parent-name>
+            <remote-alias>Reported Currency</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[booking_8F818CBD894049968ADF3466B5AE1EC9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gross Profit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Gross Profit]</local-name>
+            <parent-name>[booking]</parent-name>
+            <remote-alias>Gross Profit</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[booking_8F818CBD894049968ADF3466B5AE1EC9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Revenue</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Revenue]</local-name>
+            <parent-name>[booking]</parent-name>
+            <remote-alias>Total Revenue</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[booking_8F818CBD894049968ADF3466B5AE1EC9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cost of Revenue</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cost of Revenue]</local-name>
+            <parent-name>[booking]</parent-name>
+            <remote-alias>Cost of Revenue</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[booking_8F818CBD894049968ADF3466B5AE1EC9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cost of Goods and Services Sold</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cost of Goods and Services Sold]</local-name>
+            <parent-name>[booking]</parent-name>
+            <remote-alias>Cost of Goods and Services Sold</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[booking_8F818CBD894049968ADF3466B5AE1EC9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Operating Income</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Operating Income]</local-name>
+            <parent-name>[booking]</parent-name>
+            <remote-alias>Operating Income</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[booking_8F818CBD894049968ADF3466B5AE1EC9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Selling, General and Administrative</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Selling, General and Administrative]</local-name>
+            <parent-name>[booking]</parent-name>
+            <remote-alias>Selling, General and Administrative</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[booking_8F818CBD894049968ADF3466B5AE1EC9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Research and Development</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Research and Development]</local-name>
+            <parent-name>[booking]</parent-name>
+            <remote-alias>Research and Development</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[booking_8F818CBD894049968ADF3466B5AE1EC9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Operating Expenses</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Operating Expenses]</local-name>
+            <parent-name>[booking]</parent-name>
+            <remote-alias>Operating Expenses</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[booking_8F818CBD894049968ADF3466B5AE1EC9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Investment Income Net</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Investment Income Net]</local-name>
+            <parent-name>[booking]</parent-name>
+            <remote-alias>Investment Income Net</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[booking_8F818CBD894049968ADF3466B5AE1EC9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Net Interest Income</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Net Interest Income]</local-name>
+            <parent-name>[booking]</parent-name>
+            <remote-alias>Net Interest Income</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[booking_8F818CBD894049968ADF3466B5AE1EC9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Interest Income</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Interest Income]</local-name>
+            <parent-name>[booking]</parent-name>
+            <remote-alias>Interest Income</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[booking_8F818CBD894049968ADF3466B5AE1EC9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Interest Expense</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Interest Expense]</local-name>
+            <parent-name>[booking]</parent-name>
+            <remote-alias>Interest Expense</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[booking_8F818CBD894049968ADF3466B5AE1EC9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Non-Interest Income</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Non-Interest Income]</local-name>
+            <parent-name>[booking]</parent-name>
+            <remote-alias>Non-Interest Income</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[booking_8F818CBD894049968ADF3466B5AE1EC9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Other Non-Operating Income</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Other Non-Operating Income]</local-name>
+            <parent-name>[booking]</parent-name>
+            <remote-alias>Other Non-Operating Income</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[booking_8F818CBD894049968ADF3466B5AE1EC9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Depreciation</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Depreciation]</local-name>
+            <parent-name>[booking]</parent-name>
+            <remote-alias>Depreciation</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[booking_8F818CBD894049968ADF3466B5AE1EC9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Depreciation and Amortization</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Depreciation and Amortization]</local-name>
+            <parent-name>[booking]</parent-name>
+            <remote-alias>Depreciation and Amortization</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[booking_8F818CBD894049968ADF3466B5AE1EC9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Income Before Tax</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Income Before Tax]</local-name>
+            <parent-name>[booking]</parent-name>
+            <remote-alias>Income Before Tax</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[booking_8F818CBD894049968ADF3466B5AE1EC9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Income Tax Expense</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Income Tax Expense]</local-name>
+            <parent-name>[booking]</parent-name>
+            <remote-alias>Income Tax Expense</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[booking_8F818CBD894049968ADF3466B5AE1EC9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Interest and Debt Expense</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Interest and Debt Expense]</local-name>
+            <parent-name>[booking]</parent-name>
+            <remote-alias>Interest and Debt Expense</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[booking_8F818CBD894049968ADF3466B5AE1EC9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Net Income from Continuing Operations</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Net Income from Continuing Operations]</local-name>
+            <parent-name>[booking]</parent-name>
+            <remote-alias>Net Income from Continuing Operations</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[booking_8F818CBD894049968ADF3466B5AE1EC9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Comprehensive Income Net of Tax</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Comprehensive Income Net of Tax]</local-name>
+            <parent-name>[booking]</parent-name>
+            <remote-alias>Comprehensive Income Net of Tax</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[booking_8F818CBD894049968ADF3466B5AE1EC9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EBIT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EBIT]</local-name>
+            <parent-name>[booking]</parent-name>
+            <remote-alias>EBIT</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[booking_8F818CBD894049968ADF3466B5AE1EC9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EBITDA</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EBITDA]</local-name>
+            <parent-name>[booking]</parent-name>
+            <remote-alias>EBITDA</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[booking_8F818CBD894049968ADF3466B5AE1EC9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Net Income</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Net Income]</local-name>
+            <parent-name>[booking]</parent-name>
+            <remote-alias>Net Income</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[booking_8F818CBD894049968ADF3466B5AE1EC9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Year (netflix)]</local-name>
+            <parent-name>[netflix]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_F492CA06508548EF81CCBA00812467A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fiscal Date Ending</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Fiscal Date Ending (netflix)]</local-name>
+            <parent-name>[netflix]</parent-name>
+            <remote-alias>Fiscal Date Ending</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_F492CA06508548EF81CCBA00812467A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Reported Currency</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Reported Currency (netflix)]</local-name>
+            <parent-name>[netflix]</parent-name>
+            <remote-alias>Reported Currency</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_F492CA06508548EF81CCBA00812467A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gross Profit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Gross Profit (netflix)]</local-name>
+            <parent-name>[netflix]</parent-name>
+            <remote-alias>Gross Profit</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_F492CA06508548EF81CCBA00812467A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Revenue</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Revenue (netflix)]</local-name>
+            <parent-name>[netflix]</parent-name>
+            <remote-alias>Total Revenue</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_F492CA06508548EF81CCBA00812467A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cost of Revenue</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cost of Revenue (netflix)]</local-name>
+            <parent-name>[netflix]</parent-name>
+            <remote-alias>Cost of Revenue</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_F492CA06508548EF81CCBA00812467A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cost of Goods and Services Sold</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cost of Goods and Services Sold (netflix)]</local-name>
+            <parent-name>[netflix]</parent-name>
+            <remote-alias>Cost of Goods and Services Sold</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_F492CA06508548EF81CCBA00812467A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Operating Income</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Operating Income (netflix)]</local-name>
+            <parent-name>[netflix]</parent-name>
+            <remote-alias>Operating Income</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_F492CA06508548EF81CCBA00812467A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Selling, General and Administrative</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Selling, General and Administrative (netflix)]</local-name>
+            <parent-name>[netflix]</parent-name>
+            <remote-alias>Selling, General and Administrative</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_F492CA06508548EF81CCBA00812467A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Research and Development</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Research and Development (netflix)]</local-name>
+            <parent-name>[netflix]</parent-name>
+            <remote-alias>Research and Development</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_F492CA06508548EF81CCBA00812467A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Operating Expenses</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Operating Expenses (netflix)]</local-name>
+            <parent-name>[netflix]</parent-name>
+            <remote-alias>Operating Expenses</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_F492CA06508548EF81CCBA00812467A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Investment Income Net</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Investment Income Net (netflix)]</local-name>
+            <parent-name>[netflix]</parent-name>
+            <remote-alias>Investment Income Net</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_F492CA06508548EF81CCBA00812467A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Net Interest Income</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Net Interest Income (netflix)]</local-name>
+            <parent-name>[netflix]</parent-name>
+            <remote-alias>Net Interest Income</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_F492CA06508548EF81CCBA00812467A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Interest Income</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Interest Income (netflix)]</local-name>
+            <parent-name>[netflix]</parent-name>
+            <remote-alias>Interest Income</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_F492CA06508548EF81CCBA00812467A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Interest Expense</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Interest Expense (netflix)]</local-name>
+            <parent-name>[netflix]</parent-name>
+            <remote-alias>Interest Expense</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_F492CA06508548EF81CCBA00812467A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Non-Interest Income</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Non-Interest Income (netflix)]</local-name>
+            <parent-name>[netflix]</parent-name>
+            <remote-alias>Non-Interest Income</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_F492CA06508548EF81CCBA00812467A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Other Non-Operating Income</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Other Non-Operating Income (netflix)]</local-name>
+            <parent-name>[netflix]</parent-name>
+            <remote-alias>Other Non-Operating Income</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_F492CA06508548EF81CCBA00812467A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Depreciation</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Depreciation (netflix)]</local-name>
+            <parent-name>[netflix]</parent-name>
+            <remote-alias>Depreciation</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_F492CA06508548EF81CCBA00812467A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Depreciation and Amortization</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Depreciation and Amortization (netflix)]</local-name>
+            <parent-name>[netflix]</parent-name>
+            <remote-alias>Depreciation and Amortization</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_F492CA06508548EF81CCBA00812467A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Income Before Tax</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Income Before Tax (netflix)]</local-name>
+            <parent-name>[netflix]</parent-name>
+            <remote-alias>Income Before Tax</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_F492CA06508548EF81CCBA00812467A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Income Tax Expense</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Income Tax Expense (netflix)]</local-name>
+            <parent-name>[netflix]</parent-name>
+            <remote-alias>Income Tax Expense</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_F492CA06508548EF81CCBA00812467A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Interest and Debt Expense</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Interest and Debt Expense (netflix)]</local-name>
+            <parent-name>[netflix]</parent-name>
+            <remote-alias>Interest and Debt Expense</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_F492CA06508548EF81CCBA00812467A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Net Income from Continuing Operations</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Net Income from Continuing Operations (netflix)]</local-name>
+            <parent-name>[netflix]</parent-name>
+            <remote-alias>Net Income from Continuing Operations</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_F492CA06508548EF81CCBA00812467A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Comprehensive Income Net of Tax</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Comprehensive Income Net of Tax (netflix)]</local-name>
+            <parent-name>[netflix]</parent-name>
+            <remote-alias>Comprehensive Income Net of Tax</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_F492CA06508548EF81CCBA00812467A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EBIT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EBIT (netflix)]</local-name>
+            <parent-name>[netflix]</parent-name>
+            <remote-alias>EBIT</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_F492CA06508548EF81CCBA00812467A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EBITDA</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EBITDA (netflix)]</local-name>
+            <parent-name>[netflix]</parent-name>
+            <remote-alias>EBITDA</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_F492CA06508548EF81CCBA00812467A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Net Income</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Net Income (netflix)]</local-name>
+            <parent-name>[netflix]</parent-name>
+            <remote-alias>Net Income</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_F492CA06508548EF81CCBA00812467A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Year (mattel)]</local-name>
+            <parent-name>[mattel]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mattel_337A683147604B0ABE1EEADED1333C91]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fiscal Date Ending</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Fiscal Date Ending (mattel)]</local-name>
+            <parent-name>[mattel]</parent-name>
+            <remote-alias>Fiscal Date Ending</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mattel_337A683147604B0ABE1EEADED1333C91]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Reported Currency</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Reported Currency (mattel)]</local-name>
+            <parent-name>[mattel]</parent-name>
+            <remote-alias>Reported Currency</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mattel_337A683147604B0ABE1EEADED1333C91]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gross Profit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Gross Profit (mattel)]</local-name>
+            <parent-name>[mattel]</parent-name>
+            <remote-alias>Gross Profit</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mattel_337A683147604B0ABE1EEADED1333C91]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Revenue</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Revenue (mattel)]</local-name>
+            <parent-name>[mattel]</parent-name>
+            <remote-alias>Total Revenue</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mattel_337A683147604B0ABE1EEADED1333C91]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cost of Revenue</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cost of Revenue (mattel)]</local-name>
+            <parent-name>[mattel]</parent-name>
+            <remote-alias>Cost of Revenue</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mattel_337A683147604B0ABE1EEADED1333C91]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cost of Goods and Services Sold</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cost of Goods and Services Sold (mattel)]</local-name>
+            <parent-name>[mattel]</parent-name>
+            <remote-alias>Cost of Goods and Services Sold</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mattel_337A683147604B0ABE1EEADED1333C91]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Operating Income</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Operating Income (mattel)]</local-name>
+            <parent-name>[mattel]</parent-name>
+            <remote-alias>Operating Income</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mattel_337A683147604B0ABE1EEADED1333C91]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Selling, General and Administrative</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Selling, General and Administrative (mattel)]</local-name>
+            <parent-name>[mattel]</parent-name>
+            <remote-alias>Selling, General and Administrative</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mattel_337A683147604B0ABE1EEADED1333C91]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Research and Development</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Research and Development (mattel)]</local-name>
+            <parent-name>[mattel]</parent-name>
+            <remote-alias>Research and Development</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mattel_337A683147604B0ABE1EEADED1333C91]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Operating Expenses</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Operating Expenses (mattel)]</local-name>
+            <parent-name>[mattel]</parent-name>
+            <remote-alias>Operating Expenses</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mattel_337A683147604B0ABE1EEADED1333C91]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Investment Income Net</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Investment Income Net (mattel)]</local-name>
+            <parent-name>[mattel]</parent-name>
+            <remote-alias>Investment Income Net</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mattel_337A683147604B0ABE1EEADED1333C91]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Net Interest Income</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Net Interest Income (mattel)]</local-name>
+            <parent-name>[mattel]</parent-name>
+            <remote-alias>Net Interest Income</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mattel_337A683147604B0ABE1EEADED1333C91]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Interest Income</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Interest Income (mattel)]</local-name>
+            <parent-name>[mattel]</parent-name>
+            <remote-alias>Interest Income</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mattel_337A683147604B0ABE1EEADED1333C91]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Interest Expense</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Interest Expense (mattel)]</local-name>
+            <parent-name>[mattel]</parent-name>
+            <remote-alias>Interest Expense</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mattel_337A683147604B0ABE1EEADED1333C91]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Non-Interest Income</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Non-Interest Income (mattel)]</local-name>
+            <parent-name>[mattel]</parent-name>
+            <remote-alias>Non-Interest Income</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mattel_337A683147604B0ABE1EEADED1333C91]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Other Non-Operating Income</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Other Non-Operating Income (mattel)]</local-name>
+            <parent-name>[mattel]</parent-name>
+            <remote-alias>Other Non-Operating Income</remote-alias>
+            <ordinal>70</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mattel_337A683147604B0ABE1EEADED1333C91]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Depreciation</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Depreciation (mattel)]</local-name>
+            <parent-name>[mattel]</parent-name>
+            <remote-alias>Depreciation</remote-alias>
+            <ordinal>71</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mattel_337A683147604B0ABE1EEADED1333C91]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Depreciation and Amortization</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Depreciation and Amortization (mattel)]</local-name>
+            <parent-name>[mattel]</parent-name>
+            <remote-alias>Depreciation and Amortization</remote-alias>
+            <ordinal>72</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mattel_337A683147604B0ABE1EEADED1333C91]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Income Before Tax</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Income Before Tax (mattel)]</local-name>
+            <parent-name>[mattel]</parent-name>
+            <remote-alias>Income Before Tax</remote-alias>
+            <ordinal>73</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mattel_337A683147604B0ABE1EEADED1333C91]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Income Tax Expense</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Income Tax Expense (mattel)]</local-name>
+            <parent-name>[mattel]</parent-name>
+            <remote-alias>Income Tax Expense</remote-alias>
+            <ordinal>74</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mattel_337A683147604B0ABE1EEADED1333C91]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Interest and Debt Expense</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Interest and Debt Expense (mattel)]</local-name>
+            <parent-name>[mattel]</parent-name>
+            <remote-alias>Interest and Debt Expense</remote-alias>
+            <ordinal>75</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mattel_337A683147604B0ABE1EEADED1333C91]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Net Income from Continuing Operations</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Net Income from Continuing Operations (mattel)]</local-name>
+            <parent-name>[mattel]</parent-name>
+            <remote-alias>Net Income from Continuing Operations</remote-alias>
+            <ordinal>76</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mattel_337A683147604B0ABE1EEADED1333C91]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Comprehensive Income Net of Tax</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Comprehensive Income Net of Tax (mattel)]</local-name>
+            <parent-name>[mattel]</parent-name>
+            <remote-alias>Comprehensive Income Net of Tax</remote-alias>
+            <ordinal>77</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mattel_337A683147604B0ABE1EEADED1333C91]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EBIT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EBIT (mattel)]</local-name>
+            <parent-name>[mattel]</parent-name>
+            <remote-alias>EBIT</remote-alias>
+            <ordinal>78</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mattel_337A683147604B0ABE1EEADED1333C91]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EBITDA</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EBITDA (mattel)]</local-name>
+            <parent-name>[mattel]</parent-name>
+            <remote-alias>EBITDA</remote-alias>
+            <ordinal>79</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mattel_337A683147604B0ABE1EEADED1333C91]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Net Income</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Net Income (mattel)]</local-name>
+            <parent-name>[mattel]</parent-name>
+            <remote-alias>Net Income</remote-alias>
+            <ordinal>80</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mattel_337A683147604B0ABE1EEADED1333C91]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Ebitda' datatype='integer' name='[EBITDA]' role='measure' type='quantitative' />
+      <column caption='Ebit' datatype='integer' name='[EBIT]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Total Revenue (mattel)]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Total Revenue (netflix)]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Total Revenue]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='booking' datatype='table' name='[__tableau_internal_object_id__].[booking_8F818CBD894049968ADF3466B5AE1EC9]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='mattel' datatype='table' name='[__tableau_internal_object_id__].[mattel_337A683147604B0ABE1EEADED1333C91]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='netflix' datatype='table' name='[__tableau_internal_object_id__].[netflix_F492CA06508548EF81CCBA00812467A2]' role='measure' type='quantitative' />
+      <column-instance column='[Total Revenue (mattel)]' derivation='Sum' name='[sum:Total Revenue (mattel):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total Revenue (netflix)]' derivation='Sum' name='[sum:Total Revenue (netflix):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total Revenue]' derivation='Sum' name='[sum:Total Revenue:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' palette='tableau20_10_0' type='palette'>
+            <map to='#1f77b4'>
+              <bucket>&quot;[federated.1vub51e0te6viq0zkvw4w0ry8n6h].[sum:Total Revenue:qk]&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;[federated.1vub51e0te6viq0zkvw4w0ry8n6h].[sum:Total Revenue (netflix):qk]&quot;</bucket>
+            </map>
+            <map to='#f7b6d2'>
+              <bucket>&quot;[federated.1vub51e0te6viq0zkvw4w0ry8n6h].[sum:Total Revenue (mattel):qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Germany&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='booking' id='booking_8F818CBD894049968ADF3466B5AE1EC9'>
+            <properties context=''>
+              <relation connection='excel-direct.1lbafvl0ipba5x1gyas6f08ffv1f' name='booking' table='[booking$]' type='table'>
+                <columns gridOrigin='A1:AA15:no:A1:AA15:0' header='yes' outcome='2'>
+                  <column datatype='string' name='Year' ordinal='0' />
+                  <column datatype='date' name='Fiscal Date Ending' ordinal='1' />
+                  <column datatype='string' name='Reported Currency' ordinal='2' />
+                  <column datatype='integer' name='Gross Profit' ordinal='3' />
+                  <column datatype='integer' name='Total Revenue' ordinal='4' />
+                  <column datatype='integer' name='Cost of Revenue' ordinal='5' />
+                  <column datatype='integer' name='Cost of Goods and Services Sold' ordinal='6' />
+                  <column datatype='integer' name='Operating Income' ordinal='7' />
+                  <column datatype='integer' name='Selling, General and Administrative' ordinal='8' />
+                  <column datatype='integer' name='Research and Development' ordinal='9' />
+                  <column datatype='integer' name='Operating Expenses' ordinal='10' />
+                  <column datatype='integer' name='Investment Income Net' ordinal='11' />
+                  <column datatype='integer' name='Net Interest Income' ordinal='12' />
+                  <column datatype='integer' name='Interest Income' ordinal='13' />
+                  <column datatype='integer' name='Interest Expense' ordinal='14' />
+                  <column datatype='integer' name='Non-Interest Income' ordinal='15' />
+                  <column datatype='integer' name='Other Non-Operating Income' ordinal='16' />
+                  <column datatype='integer' name='Depreciation' ordinal='17' />
+                  <column datatype='integer' name='Depreciation and Amortization' ordinal='18' />
+                  <column datatype='integer' name='Income Before Tax' ordinal='19' />
+                  <column datatype='integer' name='Income Tax Expense' ordinal='20' />
+                  <column datatype='integer' name='Interest and Debt Expense' ordinal='21' />
+                  <column datatype='integer' name='Net Income from Continuing Operations' ordinal='22' />
+                  <column datatype='integer' name='Comprehensive Income Net of Tax' ordinal='23' />
+                  <column datatype='integer' name='EBIT' ordinal='24' />
+                  <column datatype='integer' name='EBITDA' ordinal='25' />
+                  <column datatype='integer' name='Net Income' ordinal='26' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='mattel' id='mattel_337A683147604B0ABE1EEADED1333C91'>
+            <properties context=''>
+              <relation connection='excel-direct.1lbafvl0ipba5x1gyas6f08ffv1f' name='mattel' table='[mattel$]' type='table'>
+                <columns gridOrigin='A1:AA16:no:A1:AA16:0' header='yes' outcome='2'>
+                  <column datatype='string' name='Year' ordinal='0' />
+                  <column datatype='date' name='Fiscal Date Ending' ordinal='1' />
+                  <column datatype='string' name='Reported Currency' ordinal='2' />
+                  <column datatype='integer' name='Gross Profit' ordinal='3' />
+                  <column datatype='integer' name='Total Revenue' ordinal='4' />
+                  <column datatype='integer' name='Cost of Revenue' ordinal='5' />
+                  <column datatype='integer' name='Cost of Goods and Services Sold' ordinal='6' />
+                  <column datatype='integer' name='Operating Income' ordinal='7' />
+                  <column datatype='integer' name='Selling, General and Administrative' ordinal='8' />
+                  <column datatype='integer' name='Research and Development' ordinal='9' />
+                  <column datatype='integer' name='Operating Expenses' ordinal='10' />
+                  <column datatype='integer' name='Investment Income Net' ordinal='11' />
+                  <column datatype='integer' name='Net Interest Income' ordinal='12' />
+                  <column datatype='integer' name='Interest Income' ordinal='13' />
+                  <column datatype='integer' name='Interest Expense' ordinal='14' />
+                  <column datatype='integer' name='Non-Interest Income' ordinal='15' />
+                  <column datatype='integer' name='Other Non-Operating Income' ordinal='16' />
+                  <column datatype='integer' name='Depreciation' ordinal='17' />
+                  <column datatype='integer' name='Depreciation and Amortization' ordinal='18' />
+                  <column datatype='integer' name='Income Before Tax' ordinal='19' />
+                  <column datatype='integer' name='Income Tax Expense' ordinal='20' />
+                  <column datatype='integer' name='Interest and Debt Expense' ordinal='21' />
+                  <column datatype='integer' name='Net Income from Continuing Operations' ordinal='22' />
+                  <column datatype='integer' name='Comprehensive Income Net of Tax' ordinal='23' />
+                  <column datatype='integer' name='EBIT' ordinal='24' />
+                  <column datatype='integer' name='EBITDA' ordinal='25' />
+                  <column datatype='integer' name='Net Income' ordinal='26' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='netflix' id='netflix_F492CA06508548EF81CCBA00812467A2'>
+            <properties context=''>
+              <relation connection='excel-direct.1lbafvl0ipba5x1gyas6f08ffv1f' name='netflix' table='[netflix$]' type='table'>
+                <columns gridOrigin='A1:AA16:no:A1:AA16:0' header='yes' outcome='2'>
+                  <column datatype='string' name='Year' ordinal='0' />
+                  <column datatype='date' name='Fiscal Date Ending' ordinal='1' />
+                  <column datatype='string' name='Reported Currency' ordinal='2' />
+                  <column datatype='integer' name='Gross Profit' ordinal='3' />
+                  <column datatype='integer' name='Total Revenue' ordinal='4' />
+                  <column datatype='integer' name='Cost of Revenue' ordinal='5' />
+                  <column datatype='integer' name='Cost of Goods and Services Sold' ordinal='6' />
+                  <column datatype='integer' name='Operating Income' ordinal='7' />
+                  <column datatype='integer' name='Selling, General and Administrative' ordinal='8' />
+                  <column datatype='integer' name='Research and Development' ordinal='9' />
+                  <column datatype='integer' name='Operating Expenses' ordinal='10' />
+                  <column datatype='string' name='Investment Income Net' ordinal='11' />
+                  <column datatype='integer' name='Net Interest Income' ordinal='12' />
+                  <column datatype='integer' name='Interest Income' ordinal='13' />
+                  <column datatype='integer' name='Interest Expense' ordinal='14' />
+                  <column datatype='integer' name='Non-Interest Income' ordinal='15' />
+                  <column datatype='integer' name='Other Non-Operating Income' ordinal='16' />
+                  <column datatype='string' name='Depreciation' ordinal='17' />
+                  <column datatype='integer' name='Depreciation and Amortization' ordinal='18' />
+                  <column datatype='integer' name='Income Before Tax' ordinal='19' />
+                  <column datatype='integer' name='Income Tax Expense' ordinal='20' />
+                  <column datatype='integer' name='Interest and Debt Expense' ordinal='21' />
+                  <column datatype='integer' name='Net Income from Continuing Operations' ordinal='22' />
+                  <column datatype='integer' name='Comprehensive Income Net of Tax' ordinal='23' />
+                  <column datatype='integer' name='EBIT' ordinal='24' />
+                  <column datatype='integer' name='EBITDA' ordinal='25' />
+                  <column datatype='integer' name='Net Income' ordinal='26' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[Year (netflix)]' />
+              <expression op='[Year (mattel)]' />
+            </expression>
+            <first-end-point object-id='netflix_F492CA06508548EF81CCBA00812467A2' />
+            <second-end-point object-id='mattel_337A683147604B0ABE1EEADED1333C91' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Year]' />
+              <expression op='[Year (netflix)]' />
+            </expression>
+            <first-end-point object-id='booking_8F818CBD894049968ADF3466B5AE1EC9' />
+            <second-end-point object-id='netflix_F492CA06508548EF81CCBA00812467A2' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{3B4B2497-28FF-41DA-BB53-D2B8137D9369}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='booking+ (all_incomes)' name='federated.1vub51e0te6viq0zkvw4w0ry8n6h' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1vub51e0te6viq0zkvw4w0ry8n6h'>
+            <column datatype='integer' name='[Total Revenue (mattel)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Total Revenue (netflix)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Total Revenue]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Year]' role='dimension' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total Revenue (mattel)]' derivation='Sum' name='[sum:Total Revenue (mattel):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total Revenue (netflix)]' derivation='Sum' name='[sum:Total Revenue (netflix):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total Revenue]' derivation='Sum' name='[sum:Total Revenue:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1vub51e0te6viq0zkvw4w0ry8n6h].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1vub51e0te6viq0zkvw4w0ry8n6h].[sum:Total Revenue:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1vub51e0te6viq0zkvw4w0ry8n6h].[sum:Total Revenue (mattel):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1vub51e0te6viq0zkvw4w0ry8n6h].[sum:Total Revenue (netflix):qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1vub51e0te6viq0zkvw4w0ry8n6h].[none:Year:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Year:nk]' />
+              <groupfilter function='member' level='[none:Year:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1vub51e0te6viq0zkvw4w0ry8n6h].[:Measure Names]</column>
+            <column>[federated.1vub51e0te6viq0zkvw4w0ry8n6h].[none:Year:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' value='#00000000' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='dotted' />
+            <format attr='stroke-size' value='1' />
+            <format attr='stroke-color' value='#b4b4b4' />
+            <format attr='title' class='0' field='[federated.1vub51e0te6viq0zkvw4w0ry8n6h].[Multiple Values]' scope='rows' value='Total Revenue' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.1vub51e0te6viq0zkvw4w0ry8n6h].[Multiple Values]' value='#f5f5f5' />
+            <format attr='color' field='[federated.1vub51e0te6viq0zkvw4w0ry8n6h].[none:Year:nk]' value='#f5f5f5' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#333333' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-pattern-only' value='dashed' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='div-level' scope='rows' value='1' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1vub51e0te6viq0zkvw4w0ry8n6h].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='3.3922650814056396' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1vub51e0te6viq0zkvw4w0ry8n6h].[Multiple Values]</rows>
+        <cols>[federated.1vub51e0te6viq0zkvw4w0ry8n6h].[none:Year:nk]</cols>
+      </table>
+      <simple-id uuid='{BC27182F-954A-47A3-AE96-3D646225A3B7}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7BD9C946-E6D5-4A4A-8702-F43C06F54422}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='5' param='[federated.1vub51e0te6viq0zkvw4w0ry8n6h].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1vub51e0te6viq0zkvw4w0ry8n6h].[:Measure Names]</field>
+            <field>[federated.1vub51e0te6viq0zkvw4w0ry8n6h].[none:Year:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{28E81B8A-D3AF-4F89-AF73-7B4B9199D08B}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAgAElEQVR4nO2955Nc2Xmn+Vybvqoyy3sLoAw8uuFdowG0IbvJ4YiSyJkRpRhqZmJjNmL3
+      636Y2H9AEcOI3ZjQakNLDUVJ1Awlkc1ms5vt0Gh474FCVQEo7226e/Pee/ZDJlAFV5XoShQK
+      qPtEIFBpzj0nM8/v3Pe85z3vkYQQAheXFYoK8PXXX3Pu3LkX3RYXlyVHBTh37hw/+9nPXnRb
+      XFyWHPlFN8DF5UXiCsBlReMKwGVF4wrAZUXjCsBlReMKwGVF4wrAZUWz5AJoaGhY6ipdXJ7K
+      kgvAcZylrtLF5amoiyqtBNj7xk58Clw+fYxw4yaqCwMM37vFpc5RduzaTkCXuX7+BL2jUQBs
+      285Fu11ccsLiBOAYnPn6CMGyVbQ11eErLeTSmROMjI6xfvdbDF0/SteYia64o77L8mRxJpCw
+      KG/cwFv7ttDT08+Vazcpq2ni3YM7KQvJdAxb7HnnPTavLs9Rc11ccsuiBKD4Qkz3XOOXH35F
+      y9pmFJHk6pVrqN4gd0ZMtq4Oc+7Cdbw+b67a6+KSUxZlAjkpi6bXthGQUxw9foZQxWr27W7k
+      6y+/YmjGZO3mrWyrVLl45lSu2uviklMWJQBhJTh59MsHj6c6rtLbMfv61bPHubqYClxcnjPu
+      QpjLimbJBaCqi3M8ubjkkiUXgCRJS12li8tTcU0glxWNKwCXFc2SC8CyrKWu0sXlqSy5ANw0
+      RC7LCdcEclnRuAJwWdG4AnBZ0bgCcFnRuAJwWdEsuQBk2dWcy/JhyXujoihLXaWLy1Nxh2OX
+      FY0rAJcVzeJik9U8Dh3ehS7LXDt9FKW0mZa6EtovnKBzxOLNA7uQEbRfPEHXwCTgpkVxWV4s
+      TgDWDJ/97mNKG9bSVFuDLxzktx9+wluHd1Ng+bl69GP6YxbynAhoNy2Ky3JikSaQoK5lC7u3
+      NDMyOkHKSOA4JklLIuwVDEQV9r3/h+zdUJeTxrq45JpFCUANhrFGu/j02CUa6qvw5hVTVFKD
+      nzjtfTH2bqzk6uWbyK7nx2WZsigTyIrHKGjeTJVi8sXRMzi+Qra01vLFV6eJmw5SywaayzTO
+      XLieq/a6uOSURWaGM7l89uTs49QIx0+OPHjYdeMiXYuqwMXl+eK6QV1WLB4hXAG4rFCE4Ltm
+      yk2L4rIyabEd3kq9AAG4aVFcXjQhR/AnhoGGOwdwWWFIQvA906QqszfdFYDLimKjbbM/k5nE
+      xk2L4rKCyHME/z5poAIC+KWuuWlRXFYGihD8G9MgL/P4uizzO+0FCMDFZckRgtctm22WjQRM
+      A3/r8ZCSJFcALq8+hULwA9NEARzgl7pOr5Lu+q4AXF5pZCH4U8MkkjG9LyoKR7TZtShXAC6v
+      LkJwIGWxPrMHZQb4G4+OPWctyhWAyytLmRD8kWkik3Z5/p1HZ/yRhVh3JdjllcQjBH+WNLh/
+      PukpVeGYqsKLFoAbC+Ty3BGCN1MWLZn950OSxN/rOuIJg69rArm8ctQ7Du+bJhKQAn7u0Zl8
+      SkK2RQtA1Tz4fV6kzN+BQACPnh7lNd2D3+d7aFO8i8vzRBeCPzFMAqRXe4+qKhfn2ZK7OHtE
+      y2f/ga0IyUu89wrBhtcwxgcY6bvDQCrMm1uqGJlK0XvrvJsWxeX5k4nxb8z0sWFJ4h88TzZ9
+      7rO4O0Bqik8//oz+0Qniho2MTCAYwnEstmyo5ze/+pyB4SGm48aDIm5aFJfnxRrb4VupFBJg
+      AD/16CQWcLosckYqs3XfIRJ917jc0cul2z3Iis777x1iypRQFYeknMfGNVV8evr24qpycZkH
+      vxD8yDSQSZs+v9c0rmaRjWRRAlALm9jRWsYNj8BIpShetYUCn0Zi5B5nO6K89wffZSalMHqz
+      ZzHVuLjMjxB8x0xR7aRXe7tlmd/o2mMuzyexuLQoY+385L+1P3jcfu+3D73+D7/oWMzlXVyy
+      osV2OJhKAWACP9N1YlmuN7luUJeXGp9Ib2/USZs+n2ga7Ur23doVgMvLS8brU5kJdOuTJP5F
+      1+b1+jyKKwCXl5ZVjsPhjNfHBP67x4PxjKE2biiEy0uJTwj+zDAeTGI/1jRuqM+eg9YNhnN5
+      +ciYPve9Pl2yzAe69o0u5ZpALi8dzbbDm3O9PlkseD0NVwAuLxUeIfgT08BD2uvzO02jYxEn
+      j7ppUVxeHoTge3NMnx457fXJZsHrabhpUVxeGlY56XyeAEngp5nMDovBNYFcXgp8QvAjI53Z
+      4X6sz+0cnDy0oAB8BWX80R//EaXFJdSWFyy6QheXb8L7ZoraTJhztyzx62/o9XmUBQWweesW
+      Jqai+FWHlpbVOanUxeVZaLZsDmdMnxTw1x4PyRy50xcUQNfdflpa2/jeD35If1dnTip1cckW
+      rxD8O3M21ucjTaNrEV6fR1lwWdZJRrl07iyy5DBjuru5XJYQIXh/jtenV5b41SK9Po+yoJSs
+      lMn09CRx20tDdcmiK3RXgl2ypclxeGdOrM9PPR7MHPefBe8ABcXltLQ0ouhehm8tfmOLGwvk
+      kg2+TErD+73ld5pGew5Nn/ss2BsH7rZzxphEwmGw917OG+Di8hhC8N4cr88dWebDHJs+91lQ
+      AC1bdrG+Oh/TFlwXUS609895VaKxbRN1xX7OnDyJCJWzdV09506eZDJh07JhCxVhLxfOnGI8
+      ajy1DheXuazOhDlD2uvztx6d+HMynRcUgJ0yaL9xlYmYydjo9MMvakGU+ACnb/jZtmUteriK
+      I0dO8sburbRPeglNXuOrm1GC+uyChZsWxWU+/CJ9isv9WJ+Pn5Ppc58Frzw80EdFfTN1dXUU
+      5vkffjE1Q8+YzY4tq7nR3k1iZpTYzCgxx0NDiYfT7RNs37+fmpLQgyJuWhSXp6EIwY8Mg/JM
+      uEyvJPHPz8n0uc+CAgiFiygrLeLGpQtEigsfflEJsH/3Rk58/il9YzN4fHloegCfYjMUFTSV
+      qJy7dIvCcN6TL+7ich8h2GtZbM+c4hIF/h9v7r0+j7KgCZQXCjA4Mkbjmla89sjDhUNhAh4P
+      O/a+wZ0b57nS0c/BN3dz9ewJeidt9uzbTaMiuHnh5HP7AC6vBnWOwx8Zs6nMf6nr3M1BrM9C
+      LCiAW1cuEJDXozkJPv368kOvWZO9/M9/7p3zzCh9HVcfPDry6cc5a6jLq0vQEfzHpEEg8/iE
+      qvCFtjTu8gVNoPxIGQ311RREiikryl+KNrmsIKTMIRaVc+z+n3s8D53i8jxZUADjw73c7R6k
+      qLKBqlJXAC45JGP377EsJCAO/JXXQ3QJowUWvM8UlpShOlF+/v/9JVbKXIo2uawQKh3BHxuz
+      pzf+WtfoWgK7fy4L3gEipZU0rmqmKC/EjtfXLrpCZYk/oMvyxCcEPzYMgpnHp1WF32m5ifF/
+      FhYOhrMsbElh1xsHkc3Y4it8josaLi8JQvA903yQx79fkvi5ri+Z3T+XeU0gVfcx1HWNM8YE
+      wrEY7B5cdIXaC1C5yzJCCHZbFgdTabs/BvyNx/PUI4yeN/PWuv/d79BUVcr6bXs4tG8Hkr34
+      jA7xeHzR13B5SRGCLbbNn2eiPA3gJ14v179BRrdcMa8A/LqE0DxYlk379StoXs+iK3TDoVcu
+      ZULw58nZQyx+pX+zdIa5ZF4BXLxwBV330HPrEhOGgvoMaaefhrshZmXiywS53V/suqi8mEnv
+      o8w7HHffvkq3e7KRy2LJnODSPOfwup969EXn9MkF8wqgoXUzTVVFDx7fvXme9u7R594ol1eL
+      LfZsVgebdFaH8WXiDZy3FdHpCYaGh0maFo7jkIukbqnMF+GyMih0HP7MMNDI2P2axrUcmNK5
+      Yt6WDPfeQQTL2Lp1K3X1DdSXuWHNLtmjCcGfGwZ5mYHzipL94XVLxYIuGb9qc+L8ZXzGNJ6g
+      mxnOJUuE4F0zRZudtvvHJIn/noNcnrlmQQFcPHsKDZmWdS20n7+yFG1yeQVYazu8lzF3HdKH
+      Vg8tE7t/LvO3SJJ5fdsOdCnO9Vs9bN2yboma5fIyU+44/Acjva8X4ANN49IyjQGb9w4QLK1n
+      /97drF9Vw0w0ytHff/jYe4qrVlGb73D2WierN2yjviyf4Xu3uNgxxObXtxIJqFw5d5LBCXcF
+      eCXgF4L/kDQIC4EAbskyv3qGkxsFIBQdoXqQzRiSeL5JFOYVQHSwk7/4i//Kps2b8FiT9I3O
+      PPIOL6WFRVRVyJy9doe6sjAnj33FTCxB287DGPdO8/lQAq/mZoJYCchC8ENjNshtTJL4S++T
+      7X6BBLKCUD1Y/mLsQCF2sAzbH8H2RRCaF320g+C1f0Li+Z0pseAcoHXLduzx2wxp5ezf1son
+      x6/NeTXJ1Us3qS1tAQRdvUNseG0n+WoUy6vy0bEEe7/1Domu05y50Qe40aCvMvssi32ZE4Bi
+      wF95PIzKMgIJRw/g+CJYwRLsQHH6nz+C4wmB/ORuaJStwzN4CX2s47m1eUEBJJIpVlVWk69E
+      SPR0P/2NkkRsfIDjt9t57529dI1abKgNcu7CDbZVzqZTcfcDvJo0WzY/NNIbphzgF6FCzlVt
+      xChuxvFFcDzBtPtTWmAAFA6SZSBUL0gSyYpNaGMdPC/f0bwCaG5ew/VTnzNZWY0qrtHT+0g4
+      tLeAg3u2ofl01q+qIqoVcWBdhLPHjtE7YbBl23Z2+GWunj31nJrvshyIOA7/3jDwAqas8mHl
+      ev6l9R1SvvDTCzkWUiqJbM6gxEZRo0Mo8TGU6BAgM7XlRwhPiFThKhw9iGJGn0vb5xfA5h00
+      NjY+WAH2KWe5eW949g3JST79/e/mlOima46FdPb4kRw21WU5ognBjw2TEgHni1fxt81vcSNS
+      O7vY5dhITgo5OYU6M4QSH0WJDqEkJpCNGeTUk50jnpGbJKteR6gejLL1+LuPP5f2zyuAVGyC
+      C+fPk0nPTmx6atEVuqkRXx0kIfi+aZLnL+IvVh3gy6qNOHLGxBUCdbKbQMenqDP9SM6z7SXx
+      DFwiWbkFJBmjbC2+3tPPfI1smFcAp48fY2Qkt8FvbmrEV4e1soehpj38ZeNeDHV2r4gSHcHf
+      +Sn6aPs3dmOq032oU71YBTXYoQpSeVXok3dz1PI59cz3Yq47v8urgZBVkuUbOFW7m7g/8uB5
+      yZjB13MKb+8ZZCu5qDok4eAZuopVUAOShFG+fukF4OIyF4FEKlxHvGE/VsFcO9/CM3QNf+fn
+      KMnJnNXnGbhIrOkQKBpmcQtOx2fIqcUnZpiLKwCXrLC9YWKNBzDL1s66MoWgaPwO1u2PUaOL
+      T5jwKJJloI/cxCxbh9D9GMVr8PWfz2kdrgBc5sVRvcTr9mBkPDL3qZvq593bX3B8op3e5+Sk
+      lwBv71nM0jaQZJJVr7kCcFkahCRjlLSSaNiPHSjOPCnIM2O813WMb3V9zS9km97nvK9Xm+pG
+      Tkzi+CPYoXKsYClqdChn13cF4PIQArADxcSaDpEqWvXA3JEdmwO95/l3Nz6mODHJx5rKcVV/
+      7u2RhIO3/zzxpoPpu0DlFgK3fpuzleElF4CbFmX54qg+EjU7SNTuAiXzOwlB3vgd/o9rH7Jh
+      PH1I4mVF5h91PesIz8XiGbpKom5PelGsuAV/x2dIdm7OnFvy3uimRVmemIVNRNe8i+OLPPDu
+      yIlJAneP8p/vnGS9me5wI5LEXy3xzi45MYE23olZ0orw5mGWtOAduJiTa7vD8QrHUb0kq7eR
+      qNmJ0LzpJ20Tb/8FgveOcWh6lF2miQQkgL98AWkMJdIrw2ZxS3pNoHQtnoFLOQmTdgWwQhFI
+      mEWriDcdwg6WZJ5Mhy/4uz7HM3GX7xgm302lkElHeP6jrnPrBWVy08e7kBPjOP5CUuE67EAR
+      amxk4YILsOQCsKzcx3O4ZI8AbH8RsVWHSRWtnjV3klP47h3D23Maj3D4U8Ngj5UOW3GA36sq
+      ny/RsUVPQrJNPEPXSNTvBUXDKNuA2vnpoq+75J9I5CK5kMs34onmjnBQp/sI3PoIbbqPkCP4
+      M8PgNXu28/+TpvGhruG84PmbZ+AiidrdIMsYpa347n6FbC/u0BbXBFoBCEnGLFxFvOlN7GBp
+      5kmBZEbx3TuGr/cMkmMRdhz+c9JgdSZi1wD+zqPzhaoumcdnPpT4GNrkXVKRBhxfhFS4Hs/o
+      rUVd0xXAK4wArIIaYg0HsMJ1s7E7wsEzcAl/x6cPNppU2g7/WzJJWeYOPUM6b/+pF2j2PIoE
+      ePovkgrXpyfDFZtdAbg8zv2gtUTdblKRxjkdX6BO9xO4+QHqzMCDxaQ8J53B7X7nn5Tgv3q9
+      dC7D/due4evEVh1CeEKYxaux9RCK+WiyhuxZpABUXtv7FvWBCf7HRyfYsucglZEAg7cvcHVQ
+      8Na+jSQNm9uXjtPRN7G4qlwWREgyVn4V8fp9pMJ1s5vNhUCJDuHrPo5n6DqSM5ufNew4/O9J
+      gzrHQQB9ksRPfF4Gl2HnB5CcFJ7hGySrtwISycrNBO58s52Htidv8XeAW+fPU7qzHknVCesG
+      v/7VZxx+6w1eq/Xz2Qe/wfb6MZNuTqDniUDCCpWSqNuLWbQalEx8jhDIiQl8d4/iGbr68IRR
+      CGoch/81mR75BXBTlvkrr4eRZdr57+PtP0+yYjMoKmZJG/57x555t5iQVaLN316sACxmopmN
+      D5KEbVuAg+2ARxPELZXNuw4RnrrGxyfbATctSq6xvQXE6/dilK2f7fiQnuDePYa37xzyE8IG
+      1toOPzYMCjNmzxVF5v/2eokvg8nuQijRIdSZAayCauxQKam8SvTJe1mXF0C8bg+p4jWLFIDm
+      Z11LK1U1dVQX3UZ4i9i+cx9Eh7nYqfL+t3bRF0sQT8yOPG5alNxge/NJ1OwkWbEJ5oQpS2YM
+      b+9ZfN3Hkazk40FjQrDTsvlTw8BHujP0yBJ/7fG8FJ0fZgPkogXVABiVrz2TAIyydSTq9gCL
+      nQPYKYaGOviXDzpIxqJ89dnHFBYEmRgbx3IEn4xF8OsSE+Pji6rGJY0AHG8+yarXSVZuQWiz
+      +ZYkM4Zn4BK+nlNP3ZWlCMGBlMUPzfQhdQK4Jsv8v14PYy/ZnVkfvYVkxhB6ALOwAdsTQjEW
+      ngxbgWJiq98BWUk7BRbVCifF8NDDsdkjI7O32+jUOM8nm8urjwCQFITmxQqWkgrXY+VVYoXK
+      EHrmpC0hkGwDT/8FfN0n592OqAjBH5omh1LWg85/RlH4a6+H2Esy8s9FMmPoI7cwKjcj9CBm
+      SSu+nvnzTwlZJdr6r9LfnxBoY7eX3g3qpkV5OkJWsQLFWHkV6c6eX4XtL0qPVo9imXgHLuLr
+      PoGSmP8OG3Ec/o1h8rptI5Fe3f1MU/k7Xcd6CTs/ZHaLDVzEqNwMgFG6Dm/P6acGyAlJJtr8
+      HlZeBQByYpzgjV8vvQDctChphCTj6EGsUBlWQS1WsBQrryKdEvBJHR7AcZDMKPp4J767R1Hi
+      Y/NuDFGFYKdl8YemSZ5Idxob+Edd42NNeyEns+cSdbIbJTqEnfnuUgU1T5wLCCBZtRWjfEN6
+      TcQyCF7/NYox4y6ELSX3bXijbD1G+QYcPfggB+bjbxZIVhLZmEGd6Ucbv4s604dszCClEvPv
+      iBKCakfwb02DNbbDfTlNA//g0TmqqsvqmKJvioTAM3A5vVtMVjBL1z5RAFZ+NfGG/enPLBwC
+      tz9By6RYcQWwBAjA0YMka3aQrNg0a8M/eIMABFIqiTrdjzrTjzrZgxodQjamnynuXReCw6kU
+      75spfJnnHNLn8v6DR2fgJZvsLoRn4CKJ+j0I1YtRvoHA7U8eWuizvfnMtH4XoaW/DU//Rbx9
+      5x4MIK4AnjO2HiRZvY1k1dbZCEwAO4WSGEed6kWb6kGJDqPODCKJb24iNls2PzBNGubMs6aB
+      v/V4OKkqyyKgLdcoZhRtrBOztA2h6BglrXgHLwHpBcJoy/s4gfRRv0p0iED7Rw8NKK4AnhO2
+      HiRZ+Vo6wasemDU5LAPP4BV83cdREpOL6vD3CTmC76ZM9qcs7m9TN4GvVZX/qWvMvGKj/qN4
+      +85ilrRkNs1vxjN0BYRDvH4vqcImACRjmtCV//FY+LQrgBzjqF6Mik0kqrfheAtmO75toY/c
+      xH/va5Q5gWiLQRaCTbbN9w2TCiGQSJtb/ZLE33t0Liuv5qj/KOpUL0p8DDtQjJVfje0vxPYX
+      pjfPANgWwVsfPXEHmSuAHHDfZ2+UrydRu2s2jw6AcNDG7+Dv/Bx1ujc36TyEIJw5jmiLbXM/
+      ACIBfJLZvJJYAR3/PrJtog9fJ1G/D2SFWNNBrLzKdDCgEHh7T6MP33hiWTctyiIRkoJR0kK8
+      4Y0Htmb6hXTH99058kzL9AuhCMEuy+KPDZPQnOdvyDI/9+jcW6GhJt7+C+l0LrJKqrg5/WRm
+      sSvQ+dlTHQluWpRviJDVdOa02l3pTeX382U6NtrkPXxdR9CmunN2yqEmBK22zdupFK228+B8
+      22ngn3WdI5q67A6hXkrkxCTaeFd6n/Oc50LXfzVvpOirNRwvgCxJKLKCLMsokowiy8iyjCzJ
+      SBKZ/yU8WnoqqSsqiqIgIeHV0wFnKUnlmhNkqmwTdqj8gY2vIFAn7uG5cwRt4m5OOr6UMXX2
+      pCy22jZVzmzHt4HzisIvlukB1EuNhMDbd35WAJZJ8OavkRc4WumlFoAiKxQEQpQVFBIJ5hEO
+      5OHVPHh1D15NJ+j14dU8BL0+/B4fuqrh0bT0/6qOV9fRFQ1NVZFlGU158tchhGAi5fA3fTP8
+      ZijGuDHruZGAtSGd/6UmRDiWYrj+IAMTo3QN9TIwOUrv2BAziVj2nnwhUIBW2+aNlEWbbeOf
+      +zIwLkn8va5zRlVe+Eb15YQ+2o46fgc7rxx/5+fo410LllnWaVG8mofCUD7hQIiS/EIqwsVU
+      RIopzgtTHi6ivKDowWj9vOiKp/jlQJRfDESJ2rPdWAY253v4cXUeeyJeFEmCoiaobXqovBCC
+      qXiUwclRuob6GJwcpXd8mIGJUabiM0STcSZiM+A4lDmC7ZbFHsui+JHsGQ7pQ6dPqSrHNJWk
+      2/EfQxI2Bed/ipDkrO/AyyYtiiorHFj7Om3VTZSFCykvKKIwVICuamiKirqIyZ3jOKQcm5SV
+      wrJtTCuF5dgP/jZSJo5wcByBYZkIJKY8hXwcVflyLEFsTse/b+O/oU2w3lExKKTDqCDPFyTk
+      8xP0+h+qW5IkCgIhCgIhmivrHzxvOzYp28KybZKmQTweIzQ1jjo1jj05hjU9gR2dxpoc5Zpp
+      8JGd4padYtpY3MkrK4FnMT+XjQm0u3kT/+X7/3HB9zlCkLIsTCvFTDLGyPQEgxOjDEyOMpOI
+      kTANYkaCpGmSTBlEk4l0h7dtUvYcAdg2lpP++z5CUrDyq0jU7MAs8j20p1ayDfSRW3h7z6BO
+      93FeONzPVC9JEn7dS8gXoDivgLKCIhpKqygrSN+1KiMlGfNLR8nY64qsoMgKaKRFkxeGsqon
+      fuYSy+J1I07SNIgZSaLJOKPTE8RNg8nYDBOxaWYSMabiUabiUSZjM8SMBLZjY9kOlmNj29Zz
+      PG/95WXZCCBhPjyyWbbNdCJG3/gwfePDjExPMDAxSv/EMBPRaUZnJpmK52a3wX1XZrJme9p/
+      PPcwZ8vEO5COt5cT40/04wshiBkJYkaCwclRrnQ/fLK5qqgUhQpYkx/hvWA+a/IL0YrLkQN5
+      KHkFqHlh5GDeUz1kmqoSVvMg8MSXn0jKtogm4ySMJDPJODOJONOJGHeH+7g92E3P6BDdo4M4
+      OfJSvazkVABFFXXUlEWYGu6ls3eYspomSvN1Om61EzPnt/1PdVzlR//Xf6EkP0zf+DCDk6Ok
+      rOc3aglJxg6WYEYaSVZueSgrcnoz+TiegcvppFGp2DdewAoKQUsyyY5oL5t676EAc7etWMBV
+      VeW4z0d3fpi8QB6lBYUUhgooChUQzkzyg94Aeb4Aef7AY2bWk9AUlXAg7Rh4mNcfmKFGyqRz
+      qJeu4T6udnfQNdTLyPQEozO5O+druZNDAUhsWNvM1QtniMdjVLXtpDk0xbXeGHl5PmKjC29X
+      6xzqoXOoJ3dNmoOQZBxPHqn8KlLhOlKRRhxP6KGN5AiBEhvB23MKz+BlJNt89o4vBAFgjW2z
+      1bJZa1uEBMx1VDrAqCRxUlU5rqoMyFJ6JJ4co29yjBt9dx67rKooDzxWXk0n4PVT4A9m5hd5
+      5PkChHwBCvxB8vwBQt4Aef4guqriUXV0TcOnex64egG8uoe26kbaqht5b8teLNsiYZqMRSe5
+      PdDNneE+7gz3c2e4j5lEjOlE7JVJball7so5FUA8BVu27WKq9zrBqjC//815dh7ax+D107mr
+      JksEEkL1pDdKhOsxC5tw/JF0/P2jOBbq9AC+7uNoYx3Pnm9SCDSgyXbYZaVdl0VP8OJMSRKX
+      FIUzqkK7ojyTJ8ey05N2TJgCmFp4n7UqK+mOr3nwaDoFgRC1xeXUl1SyuryWxrIqvJnXZElC
+      VVRCPpWQz09dccWD66Rsi8nYDMNT49wZ7qNrqI+u4V46BntImgZGKoVYxjMMSZLwah4qwsWs
+      r22iubKeNRV1VISLcykAh1NffowjBO9/59uMGTIRr8HZy53sqC56kBjrea4ECyTsYCmpcC1m
+      4ar0DqtHY+8fNNdBnepBm7ib9h9P9z1zvnkpk1tnq2XzumVRlglIm4sJnFMVjqsqtxRlSWN0
+      LMfGMmziGc9R/8QI13tnfeOKLFMUKqCuuIKm8hqaK+poLKumpqjsoetoikpxXpjivDBt1Y2z
+      17ctRqYn6B4d4t5IP3dH+ukc6uX2QPdDzoUXQYE/REtVPWurm2itaqC+pIKivPBj78udACSF
+      7W8cJhzQGLx9mfN3Z/jWu98llbK5e/n4bIU5jgUSsooZacQsbSMVrsfxBB+exD54o4MSG0Gd
+      6kUf60Ab70KyjGfq9IoQlAhBle3QYtu02jblQvBobUngZmakP6eqxGBZ7sCyHdHuT3gAABC0
+      SURBVIehqXGGpsY51XEVSK+GezWd2uJymsprqC+uoK6kgqpIKaUFhQ+8WJCe3JeHiykPF7Nt
+      1VqEEAghSGWE0TnUy9DUGHD/Dvb0eaAjBMnUI6HKsoKe6S8eTUeSJHRVQ5EVNFlBzSxc+nQP
+      SOBRdWRZpiQvTFlBEYosP3XAjSbj3BsdRBJCiJ/85Cf87Gc/++bf5DPQ0NBAV9fCK3TzIZDS
+      6UEqt2CWtGD7Cx/v9EIgJ6dQp3vRJu6hjXeiJKcf2i20EB4hKHIEjY7NWsumznEIC8GjRpQg
+      3em7ZJnTqsolVWFckl6pUGS/x0uBP0R5uIg1FXXUFpdTV1xBaX4hef4Auvp8T4tcDCnLYjI+
+      Q/vAPa73dnF7oJvbA91MxKaXjxt0IQSkTwwPN5Cs3IwVrnvYnhcCyTZRZgbQJu6hj3eiRAeR
+      rewOU5OEwAOUOQ6ttkOTbVPtOBQ9JXeMAFLAkJyezJ5UVYYlaVmO9LkgbiSJG0n6J0Y41zUb
+      WpznC1AYKqAyUkJzRR0NpVXUFJVRWhBBU1QUWcmJ2SuEeDDPuD8RF2J25jH3OcuxGZ2Z5HpP
+      F+e6rtMx2MPw1DjTicdPmX8p0qLYvgjJik0YZetwfI/YcUKgTtzBO3gFfeQWcurxD/kYQuAH
+      Ch1BRDjUOg6rbYcG234oxPhRTKBXlrkjy9xQFO4o8ivd6bNhOuMdujPcx9c3Lzx4Puj1Uxkp
+      oTCYP286TEWW5717mFYK23EyK/dpE8pIpQCBaVk4wkEIkZ5zCEhaJvHMYmE2LNu0KI7iwSxa
+      jVGxiVRB7eyxnZA2b4xp9KFreAcuokSHH97nKQShzL+CjBlTLATFmRG9SAj8Gdtdhqe6OmeA
+      PlmmQ1G4qijcU2Ti4AagZUE0GedW/90X3YwFWVYmkJBkbH8RyYqNmCWtD28pFAKcFNpkN56B
+      i+ijt5FTCUIC6h2bJtuh3HEoFoJ8IfBmTJpsLVOLtJuyT5a5pcjcUhQGJImoJLkd/hVm2QjA
+      UX3MtH2XVKTp8dE+OYk+dB3vwEXU2DB+IWi2bbZZFi12emK6EIK0L94hbcpMShJDssyILNEv
+      y9yTZfpleUVtJXRZRgIwS1pmt7JBOupyrANvZrQP2iZrLZvXLIt1tv3UsBiHtOkyKcuMShLj
+      ksSoLDEsy0xIEmOSxNQr5qFx+eYsGwGoUz3IsTEkYaMPX8c3cIlIfJxmy2KrZdGa2RjyaLeN
+      ArczPvc+WWZMkkhIEjbpXVMreYLqsjDLRwCxEYpO/TeKHIcNZpIttkWN7RDk4U4vgBjpTn9S
+      VbipKEy4I7rLN2TZCCDkCP48MUOLbT+20OSQ7vTnVZVLikKHIjPh7oN1yQHLJi3KZtti0xwX
+      6f29r5cUhbOZkX4lZz1weT4sm7Qo7YpCtywhi/Tfp1WF24qCmS60pG10WTksGxNoQJb5P33p
+      DL7uSO+yVCwbAYDb8V2WnpwKoK5lM60NZdw8f4K7Yxb79u1El+HmxRPcG5oGni0tiovL8yZ3
+      AlB01tRE+Pjjzzn85g4iKT+dZz6jZzqFIs+u1L4qW+pcXg1y5kuUZBkzGcO2kiRtmSI/9EzC
+      3m9/jx1t1bmqxsUlp+RMAMKy8OcXEcovJSAn6RhMsqutmHPnrqHrzzd7m4vLNyV3JpCw+Pyr
+      02zf2MSXR04SNRzk9a+ztUnj7Oml3xTv4pINOZ0EJyaH+OLI7MHZ7ZdP057LClxccsySu0E9
+      Hg/V1U+eE6iq+tBCmWVZT500S5L00KqyEGJeD5Msyyhz8os6jjPv5hxFUR7ayWTb9ry72V72
+      thuG8aCOl/2zzG17KvX0PeCSJC29ADo6OhZ+k4vLErFsIsoCBSWsW7eOdW2tBL3fNMOAh+rK
+      kqzfXVRRR2N1KQD+/DCebBfiJI01ba0E/QHWbthIYfAJybYWIFxeQ6Eve+eA5vGhKzLeUCEb
+      Nqwn35/9d+QPhpBllcbmtaxvW0W2ebYLiisoyls4DeOTCEZKWVVXQVFFHS2N1c+UYS9SVsPG
+      jRtpbqp5tsx8is6a1rWsW7eO6tJIVkWWhQA8oTIO79nE8OAAwxNRDr3zFtl2jZKqRjZt2sjG
+      jRvZuHEr2zeuyrJkiL07WwmWN7OhsYz6Da9Rpmd3Q2x8fS+FksP3fvBDSMbZuXNrlnV6+cGP
+      /xPf+863ef+7/4r3vvUWpSHfwsWAitUbaCgM8+bBfYyPTnLg0MEsO7LE9u3bKattpT4sM2EV
+      sXNjdm7plte2sXHt6xzcv4uyovysyqTx8OYb2/GWtHJgYyWF9euoLMjuc0ZqN7C7rQLbW0xd
+      XS1vv7Etyzpl3nzrXezoGAODQ5Q372Bt7eOJsB4vtQyQJBmETTyRIJFIpA84yLKsnldMeb7G
+      yMgIIyPjpLLOOpHCSBhcOXuM/IbN1JVl/wMrqsJw921utXfQ1dmPLbJtbZIP/ulfmIyZ9HV3
+      ceLzLxmaSWRVUgiV5g2b8aem6OnrIWmrWX5HgpmUTG1VEY5tU1FVSnQ6u4wJjm1y4fgRvjp1
+      hbL6NjY112VVDiQkHJKmDY6FadnIWd5dvSE/wz09xGIJRnu6sLWCrDuposgkEwni8Xi6zixC
+      5pc8MdbTCBVV0NpYjXAs7nZ1MDo2RXZdWSEvz8f0dBTwUFOVT3fvcFYl8wsiRKfHsYVM25Yt
+      9Fw4x7S9cK2S7idPtZiKm8iaj+qyfO71DGZV533Wbt/F2PXLjGV+rGzw54XJ0wWDYwnqa4u4
+      e7cvy7x2EnWr26goCjF47w4DY2MkkgsnCCssq2BmsD8dkYuEz6eTSGSXZym/pJqasMJIUqc6
+      rHLpyk3MLL5bkGnZsIWgFOPC5ZsUlRQxOJjd7ympXtZvWIdXlRnt66Kz9/FzgR+vbRkgySqK
+      k+T27dt0dN5h3a43yHY89vh8qKpOJBIhEqlkQ1tDliVlkAT5BREi4QJCxWUUqNkZFYokULxB
+      IpEIBaECNq5dm2WdEsG8fCKRCP3tNwg1bGBdbXZzFlnV8agSpiMTCQdoXrsFT5a1+oIhpkf7
+      uXnzFjOpQvZuX5NVuZnJSYKRSOa7reLQvmzNEQnHnKFvZBpzZhQzUEFT0aNp2p+MomkM9nTS
+      2T1IXkGE17e8lqWnRmbfobeprqgkPnKXoVgBuzc3LlhqWUSDKp48/uAPvse1K9cAqCgNc2GB
+      MvdpWL+LDeUS94amgBB+LbvbO8h8+w/+mJ7rF0k5UFNVSrZjeH5FG9/bXcPVjgFAoyCYbVeU
+      eOPb/5pEz01ilqCgrIqxK51ZlfTmV/H97+7gyvV0WsnicDBrM3HzvneIGAOMxlLIahG6dDer
+      cqWNmzmwNkx79yjgI+TLdryUOfyd7zPeeY2kLSitrSBb55+/qJE/fHsdl292AzKRrCfhMkEp
+      wW8++D17Dr1N1Z1BZHl6wVLLQgBWYpzff/YFfZ2dWED/+CTZnoR16/zXJMtC3OkZBPxMrile
+      sEymVj757W9JjvUxk7S4MzSGkdUtGsbunOczaYyurjuAyuSa+gXLpHH4/KOPCDHJ4ESCUKSb
+      fDmLTHZAfKyLT76U6O7sxAFGxifJNq721BefUplvc29gEkkuYHVDdhPS3punORorpetuD+Bh
+      ck1lljXafPbRRyiJEcZmDCL3BtDi2ZlOMwPX+eQrg7udnQgkxsfXZGkKW5y/cYc8Dxw/8iWv
+      bdvJyL2Fz5pYFgJAVikuq2VVXS3IGjODHWR7trovP8zq1jbqV7WiayrnTxzJutqismqqW5uw
+      hYw9M8yRruxsccWXR+OqZurr6lE0nY7LJ7Ous7C0jNaatZi2QLZiHD12IqtykuajuqaRxrpa
+      ZMXDYNdFsk3zm19YSEtrHY2tNroCx458nlU5PVBA05o26hpWoWka188dy7JGKCytoKmsmZQD
+      JKf46sTdrMpJepC6hlU01NUiqzo9N89lKQCwJY1d+9/EsBxUTK4MjC5YZlkIIBiuJd8Z4tPP
+      rgESB779HsErnWRzAtiGjRs5f+S3jCQdlEA1b29r48PPzy9ckHxWVyj8+oPPEMC2w+9S4rnG
+      kLHwuNq8dSd3TnxCx7SFrOXxrQNb6Br4Ios6vWxsKuI3H/4eR0Ddup00VxVx6e7CP1RF03oS
+      3Zc42jkEkszb3/oWtzo+YOGjPCReW7uaLz/5kKQt8BW1smdzE5+cuL1gybYtr3Pz69/RHbOR
+      vcW8u2cDPb/PRgRB2mqDfPCbTxFA6/YD1EVCdGRxSlD9hq2MXjnGlcEZJFnj3bcP0X7vt1mI
+      QGVraw0ffvgRjoDC2s1saqni2OX57wLLQgDx6QGkgoMcfLMUFA/SZC/ZGQbQ0XmHHQffJhpP
+      4gsEuXk22zvANCPxIIcPHcQSMj6inFvgHLP7dF27ylv736E2GkPzBujpyEZwAAZ3Ri3ePnyI
+      pCXwe2SOfj6RVcmh7g42vLGTg3UxZM1HtL89i84PIGjvGebg4cPETYtAIMDZI7/LqmTnzVvs
+      P/AOTbE4Hl+ArmunsioHMfqmVN4+fBDDBr8m+Hwqu1+0t/06b+/bT0kshqL7Ge25nrUJdKt/
+      hnfeOkwiZRPweTjx5ZUFSy0LATiWQf/QCNJUN9c6+yiprEYHsrEap0eHmJyJcPn0CSYTCtWV
+      2fqPBP39/RSrUc5euU1BWSVeWSaaxTwgOTXG6HSUjounGJw0qK4szbrOof5+wsLL16cu4QkV
+      EtA9kEUmYysxw9DYJJP3rtPZP0ZFZTUKmeRfCzA6NMBMgcTpU2dI2j4qS4NZHbEUmxxhIlrN
+      9TPHGI0KqisLs6gNQDDY34enAE6cu0YgUoquqsRTC0vWjE4yPDFD/60LdA9PUVlZhQRZuXtH
+      +vuo8BZy/NQ5hJpHYcgH0fkNxWXhBg1G6qn0RaG4mdbqCA1t67M+EXTLzp3cvniVvYcOohJg
+      fdZu0AI2rc5nMFXA9nX1VKxupTBLN2jrrv0MXzzN2l0HCPt8rG9rybJOHzs31XPpXpxDezeS
+      X1RDbUl2gq1s3owy1kVRyzZqIj7WtK3PcrVcYve2TVy61sOBA7vQlAhtzdlNZjfs3MPdc6fZ
+      euAwAc3P+rbVWZWDIK+vLef2qMT+rS0UVzdSkaU3p2HLThKdl6nduJuyPB9tbWuzXPHW2Lut
+      jbO3hnlz31Z8gVJW1y3sYl4WAjCSU6B6uXbqCIVrttJQmV0cB8D4+BRe3eSLU+0cOrgTr5rt
+      R4oRN1X6289h5NWztilbDweMDIySV+jl6NHTbN27l4JAtoEbJjNJh+RIB3emfWzduCrrH2Bq
+      fBxv0MeZr75g9db9lEeydQ8KJmMJpOQw525PsH/P5qxjgUaHJ8jLV/ny6wvs2b+boDdbgyFJ
+      zJCY7LnGiChiU0td1i7b8aExgmEfJ45+zbqd+ynOzzbOymI6kcKe6uFaf4rd27ITzrJZCfb7
+      fcTjCSRZpagozNjwSFa2n6xo6IogaVp4A3n4ZIuJmezWArxeH6aRwBESRaUlTA0PkcpqaVXG
+      59NIJAxUj58Cv8boxFRWdWoeHyKVwHKgoLAYY3qCRCqbuYeE3+9Nf0eqTnE4yMjIeFamgaJ5
+      UEQK03II5EdQUjGms3BLSpKC16OQSJroviAhj8TY5MITWQDd68M2E9gORIpLiI2PZulmlvD7
+      PcTjSWTNS1Gej+Gx7OZJqu5DspOkbEEoXIhITBNdYMV72QjAxeVFsCxMIBeXF4UrAJcVjSsA
+      lxWNKwCXFc3/D5qk5zu9aLa7AAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
